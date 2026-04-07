@@ -1,0 +1,27 @@
+{% assign visitor_counter = site.visitor_counter %}
+{% if visitor_counter and visitor_counter.enabled %}
+  <section
+    class="sidebar-visitor-counter"
+    id="visitor-counter"
+    data-provider="{{ visitor_counter.provider }}"
+    data-namespace="{{ visitor_counter.namespace }}"
+    data-timezone="{{ visitor_counter.timezone | default: site.timezone | default: 'Asia/Seoul' }}"
+    aria-label="Visitor Counter"
+  >
+    <h2 class="visitor-counter-title">VISITS</h2>
+    <div class="visitor-counter-grid">
+      <div class="visitor-counter-item">
+        <span class="visitor-counter-label">Total</span>
+        <strong class="visitor-counter-value" data-counter="total">-</strong>
+      </div>
+      <div class="visitor-counter-item">
+        <span class="visitor-counter-label">Today</span>
+        <strong class="visitor-counter-value" data-counter="today">-</strong>
+      </div>
+      <div class="visitor-counter-item">
+        <span class="visitor-counter-label">Yesterday</span>
+        <strong class="visitor-counter-value" data-counter="yesterday">-</strong>
+      </div>
+    </div>
+  </section>
+{% endif %}

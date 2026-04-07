@@ -1,15 +1,16 @@
 ---
+title: About
 icon: fas fa-info-circle
 order: 4
 ---
 
-안녕하세요. 이곳은 구현 과정과 디자인 판단, 제품 관점을 함께 기록하는 개인 개발 블로그입니다.
+안녕하세요. 이곳은 Backend Engineer Jason의 일상을 기록하는 블로그입니다.
 
 ## 무엇을 다루나요
 
-- GitHub Pages, Jekyll, 프런트엔드 구현 기록
-- 읽기 경험을 개선하는 UI/UX 메모
-- 반복적으로 마주치는 문제와 해결 방식
+- 백엔드 개발을 하며 마주친 기록과 메모
+- 일상에서 남기고 싶은 생각과 경험
+- 나중에 다시 꺼내 볼 만한 작업 과정 정리
 
 ## 운영 기준
 
@@ -21,4 +22,3 @@ order: 4
 
 - GitHub: [github.com/iamkanguk97](https://github.com/iamkanguk97)
 - Email: [iamkanguk97@kakao.com](mailto:iamkanguk97@kakao.com)
-

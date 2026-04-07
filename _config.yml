@@ -3,10 +3,10 @@ theme: jekyll-theme-chirpy
 lang: ko-KR
 timezone: Asia/Seoul
 
-title: 욱이로그
-tagline: 코드와 감각을 함께 남기는 개발 블로그
+title: Jason
+tagline: 일상을 기록하는 블로그
 description: >-
-  구현 과정과 디자인 판단, 제품 감각을 함께 기록하는 개발 블로그.
+  Backend Engineer Jason의 일상과 생각을 기록하는 블로그.
 
 url: "https://iamkanguk97.github.io"
 baseurl: ""
@@ -18,11 +18,21 @@ twitter:
   username:
 
 social:
-  name: 강욱
+  name: Jason
   email: iamkanguk97@kakao.com
   fediverse_handle:
   links:
     - https://github.com/iamkanguk97
+    - https://www.linkedin.com/in/iamkanguk/
+
+profile:
+  role: Backend Engineer
+
+visitor_counter:
+  enabled: true
+  provider: countapi
+  namespace: iamkanguk97-github-io
+  timezone: Asia/Seoul
 
 webmaster_verifications:
   google:
@@ -50,8 +60,6 @@ analytics:
 
 pageviews:
   provider:
-
-theme_mode: light
 
 cdn:
 
@@ -92,6 +100,14 @@ pwa:
       # - "/example"
 
 paginate: 10
+paginate_path: "/page:num/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-include-cache
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
@@ -160,4 +176,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-

@@ -1,6 +1,10 @@
 - type: github
   icon: "fab fa-github"
 
+- type: linkedin
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/iamkanguk/"
+
 - type: email
   icon: "fas fa-envelope"
   noblank: true
@@ -8,4 +12,3 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
-

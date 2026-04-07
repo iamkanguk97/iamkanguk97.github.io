@@ -1,0 +1,24 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#101418"/>
+  <rect x="58" y="58" width="1084" height="684" rx="34" fill="url(#paint0_linear)"/>
+  <rect x="102" y="112" width="428" height="576" rx="28" fill="#0F172A" fill-opacity="0.82"/>
+  <rect x="576" y="112" width="522" height="160" rx="28" fill="#FAF7F0" fill-opacity="0.1"/>
+  <rect x="576" y="306" width="522" height="160" rx="28" fill="#FAF7F0" fill-opacity="0.08"/>
+  <rect x="576" y="500" width="522" height="160" rx="28" fill="#FAF7F0" fill-opacity="0.06"/>
+  <rect x="146" y="162" width="210" height="18" rx="9" fill="#F8FAFC" fill-opacity="0.8"/>
+  <rect x="146" y="208" width="142" height="12" rx="6" fill="#38BDF8"/>
+  <rect x="146" y="256" width="342" height="12" rx="6" fill="#E2E8F0" fill-opacity="0.55"/>
+  <rect x="146" y="286" width="312" height="12" rx="6" fill="#E2E8F0" fill-opacity="0.35"/>
+  <rect x="146" y="400" width="146" height="146" rx="24" fill="#38BDF8" fill-opacity="0.16"/>
+  <path d="M724 181C724 160.013 741.013 143 762 143H915C935.987 143 953 160.013 953 181V203C953 223.987 935.987 241 915 241H762C741.013 241 724 223.987 724 203V181Z" fill="#38BDF8" fill-opacity="0.18"/>
+  <circle cx="854" cy="383" r="58" fill="#F97316"/>
+  <circle cx="962" cy="578" r="84" fill="#F8FAFC" fill-opacity="0.12"/>
+  <path d="M287 432L339 484L441 382" stroke="#F8FAFC" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="111" y1="98" x2="1089" y2="706" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.55" stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+</svg>

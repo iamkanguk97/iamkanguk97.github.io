@@ -1,6 +1,6 @@
-# 욱이로그
+# Jason
 
-Chirpy 테마를 적용한 GitHub Pages 기반 개인 개발 블로그입니다.
+Chirpy 테마를 적용한 GitHub Pages 기반 개인 블로그입니다.
 
 ## 로컬 실행
 
@@ -54,4 +54,3 @@ bundle exec jekyll serve --drafts
 ## 배포
 
 Chirpy는 GitHub Actions 기반 배포 구성을 사용합니다. 저장소의 GitHub Pages Source도 `GitHub Actions`로 맞추는 편이 안전합니다.
-
