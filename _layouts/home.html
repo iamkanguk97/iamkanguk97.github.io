@@ -5,6 +5,7 @@ layout: default
 {% assign featured_post = site.posts.first %}
 {% assign posts_count = site.posts | size %}
 {% assign category_count = site.categories | size %}
+{% assign tags_count = site.tags | size %}
 <section class="hero">
   <div class="hero-copy">
     <p class="eyebrow">GitHub Pages + Jekyll</p>
@@ -17,30 +18,33 @@ layout: default
       <a class="button secondary" href="{{ '/archive/' | relative_url }}">전체 글 보기</a>
     </div>
   </div>
-  <aside class="hero-panel">
-    <p class="panel-label">Current Focus</p>
-    <h2>{{ site.title }}</h2>
-    <p>{{ site.description }}</p>
-    <div class="stat-grid">
-      <article>
-        <strong>{{ posts_count }}</strong>
-        <span>Published Notes</span>
-      </article>
-      <article>
-        <strong>{{ category_count }}</strong>
-        <span>Focused Topics</span>
-      </article>
-      <article>
-        <strong>{{ site.time | date: "%Y" }}</strong>
-        <span>Current Season</span>
-      </article>
-    </div>
-    <div class="topic-row">
-      {% for category in site.categories limit: 4 %}
-        <span>{{ category | first }}</span>
-      {% endfor %}
-    </div>
-  </aside>
+  <div class="hero-sidebar">
+    {% include profile-card.html %}
+    <aside class="hero-panel">
+      <p class="panel-label">Current Focus</p>
+      <h2>{{ site.title }}</h2>
+      <p>{{ site.description }}</p>
+      <div class="stat-grid">
+        <article>
+          <strong>{{ posts_count }}</strong>
+          <span>Published Notes</span>
+        </article>
+        <article>
+          <strong>{{ category_count }}</strong>
+          <span>Focused Topics</span>
+        </article>
+        <article>
+          <strong>{{ tags_count }}</strong>
+          <span>Indexed Tags</span>
+        </article>
+      </div>
+      <div class="topic-row">
+        {% for category in site.categories limit: 4 %}
+          <span>{{ category | first }}</span>
+        {% endfor %}
+      </div>
+    </aside>
+  </div>
 </section>
 
 <section class="section">

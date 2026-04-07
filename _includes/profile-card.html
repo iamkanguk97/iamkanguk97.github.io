@@ -1,0 +1,29 @@
+<section class="profile-card{% if include.compact %} compact{% endif %}">
+  <div class="profile-card-head">
+    <img
+      class="profile-avatar"
+      src="{{ site.author.avatar | relative_url }}"
+      alt="{{ site.author.name }} 프로필 이미지"
+      width="112"
+      height="112"
+    >
+    <div>
+      <p class="panel-label">Profile</p>
+      <h2>{{ site.author.name }}</h2>
+      <p class="profile-role">{{ site.author.role }}</p>
+    </div>
+  </div>
+  <p class="profile-bio">{{ site.author.bio }}</p>
+  <div class="profile-meta">
+    <span>{{ site.author.location }}</span>
+    <span>{{ site.posts | size }} posts</span>
+  </div>
+  <div class="profile-links">
+    {% for link in site.author.links %}
+      <a href="{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noreferrer"{% endif %}>
+        {{ link.label }}
+      </a>
+    {% endfor %}
+  </div>
+</section>
+

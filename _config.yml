@@ -2,6 +2,19 @@ title: 욱이로그
 email: iamkanguk97@kakao.com
 description: >-
   코드, 디자인, 제품 감각을 함께 다루는 개발 블로그.
+author:
+  name: 강욱
+  short_name: 욱
+  role: Product-minded Developer
+  bio: >-
+    구현뿐 아니라 읽는 경험과 제품 감각까지 함께 다루는 개발자.
+  location: Seoul, South Korea
+  avatar: /assets/images/profile-avatar.svg
+  links:
+    - label: GitHub
+      url: https://github.com/iamkanguk97
+    - label: Email
+      url: mailto:iamkanguk97@kakao.com
 baseurl: ""
 url: "https://iamkanguk97.github.io"
 lang: ko-KR

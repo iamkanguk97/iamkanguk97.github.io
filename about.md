@@ -6,6 +6,8 @@ description: 이 블로그와 작성자에 대한 소개
 
 안녕하세요. 이 블로그는 개발 기록을 단순히 쌓아두는 공간이 아니라, 생각의 흐름과 결과물을 함께 남기는 아카이브를 목표로 합니다.
 
+{% include profile-card.html compact=true %}
+
 ## 무엇을 쓰나요
 
 - GitHub Pages, Jekyll, 프런트엔드 같은 실전 구현 기록
@@ -22,4 +24,3 @@ description: 이 블로그와 작성자에 대한 소개
 
 - GitHub: [github.com/iamkanguk97](https://github.com/iamkanguk97)
 - Email: [iamkanguk97@kakao.com](mailto:iamkanguk97@kakao.com)
-

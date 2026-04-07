@@ -167,8 +167,14 @@ img {
   padding: 3.75rem 0 1.75rem;
 }
 
+.hero-sidebar {
+  display: grid;
+  gap: 1rem;
+}
+
 .hero-copy,
 .hero-panel,
+.profile-card,
 .focus-panel,
 .callout,
 .page-content,
@@ -274,6 +280,77 @@ img {
 
 .hero-panel {
   padding: 2rem;
+}
+
+.profile-card {
+  padding: 1.5rem;
+  background:
+    radial-gradient(circle at top right, rgba(217, 119, 87, 0.18), transparent 34%),
+    linear-gradient(180deg, rgba(255, 250, 244, 0.92), rgba(255, 255, 255, 0.78));
+}
+
+.profile-card.compact {
+  margin: 1.75rem 0 2.25rem;
+}
+
+.profile-card-head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 28px;
+  object-fit: cover;
+  border: 1px solid rgba(16, 24, 40, 0.08);
+  box-shadow: 0 20px 32px rgba(141, 63, 39, 0.16);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.profile-card h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.profile-role,
+.profile-bio,
+.profile-meta {
+  color: var(--muted);
+}
+
+.profile-role {
+  margin: 0.2rem 0 0;
+}
+
+.profile-bio {
+  margin: 1rem 0 1.2rem;
+}
+
+.profile-meta,
+.profile-links {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.profile-meta span,
+.profile-links a {
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(16, 24, 40, 0.05);
+  font-size: 0.9rem;
+}
+
+.profile-links {
+  margin-top: 1rem;
+}
+
+.profile-links a {
+  color: var(--accent-deep);
+  font-weight: 700;
 }
 
 .hero-panel h2 {
@@ -547,7 +624,8 @@ img {
   .section-split,
   .archive-item,
   .post-grid,
-  .feature-grid {
+  .feature-grid,
+  .profile-card-head {
     grid-template-columns: 1fr;
   }
 
@@ -610,4 +688,3 @@ img {
     flex-direction: column;
   }
 }
-

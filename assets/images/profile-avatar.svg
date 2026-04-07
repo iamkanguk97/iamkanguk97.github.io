@@ -1,0 +1,18 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="320" height="320" rx="72" fill="url(#paint0_linear_203_24)"/>
+  <circle cx="234" cy="82" r="30" fill="#FFF3E6" fill-opacity="0.85"/>
+  <circle cx="84" cy="236" r="44" fill="#FCE7D3" fill-opacity="0.9"/>
+  <path d="M80 242C80 186.771 124.771 142 180 142C235.229 142 280 186.771 280 242V252C280 273.539 262.539 291 241 291H119C97.4609 291 80 273.539 80 252V242Z" fill="#FFF7EE" fill-opacity="0.9"/>
+  <circle cx="180" cy="118" r="62" fill="#FFFDF9"/>
+  <path d="M133.7 118.4C133.7 92.7937 154.494 72 180.1 72C205.706 72 226.5 92.7937 226.5 118.4V121.2C226.5 146.806 205.706 167.6 180.1 167.6C154.494 167.6 133.7 146.806 133.7 121.2V118.4Z" fill="#1F2937"/>
+  <path d="M141 111C146.167 100 157.9 78 180.5 78C203.1 78 214.583 100 219.5 111V125C219.5 146.263 202.263 163.5 181 163.5H179.5C158.237 163.5 141 146.263 141 125V111Z" fill="#8D3F27"/>
+  <path d="M152 195C152 187.82 157.82 182 165 182H197C204.18 182 210 187.82 210 195V212H152V195Z" fill="#D97757"/>
+  <text x="160" y="285" text-anchor="middle" fill="#8D3F27" font-family="Arial, sans-serif" font-size="84" font-weight="700">욱</text>
+  <defs>
+    <linearGradient id="paint0_linear_203_24" x1="38" y1="28" x2="292" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6C08C"/>
+      <stop offset="0.52" stop-color="#D97757"/>
+      <stop offset="1" stop-color="#8D3F27"/>
+    </linearGradient>
+  </defs>
+</svg>
