@@ -1,0 +1,52 @@
+---
+title: Tags
+permalink: /tags/
+description: 태그별로 글을 찾아보는 인덱스 페이지
+---
+
+{% assign sorted_tags = site.tags | sort %}
+
+<section class="tag-browser-intro">
+  <p class="eyebrow">Browse by Tag</p>
+  <h2>관심 있는 주제부터 바로 찾아보세요.</h2>
+  <p>
+    태그를 누르면 해당 주제의 글 목록으로 바로 이동합니다. Chirpy처럼 주제 축으로 아카이브를 읽는 흐름을 가볍게 가져왔습니다.
+  </p>
+</section>
+
+<div class="tag-cloud">
+  {% for tag in sorted_tags %}
+    {% assign tag_name = tag[0] %}
+    {% assign tag_posts = tag[1] %}
+    <a class="tag-cloud-link" href="#{{ tag_name | slugify }}">
+      <span>#{{ tag_name }}</span>
+      <strong>{{ tag_posts | size }}</strong>
+    </a>
+  {% endfor %}
+</div>
+
+<div class="tag-sections">
+  {% for tag in sorted_tags %}
+    {% assign tag_name = tag[0] %}
+    {% assign tag_posts = tag[1] %}
+    <section class="tag-section" id="{{ tag_name | slugify }}">
+      <div class="tag-section-head">
+        <div>
+          <p class="archive-date">Tag</p>
+          <h2>#{{ tag_name }}</h2>
+        </div>
+        <span class="tag-count">{{ tag_posts | size }} posts</span>
+      </div>
+      <div class="tag-post-list">
+        {% for post in tag_posts %}
+          <article class="tag-post-item">
+            <p class="archive-date">{{ post.date | date: "%Y.%m.%d" }}</p>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>
+

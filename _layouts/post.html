@@ -15,13 +15,7 @@ layout: default
     <p class="post-meta">
       {{ page.date | date: "%Y.%m.%d" }} · {{ page.author | default: "강욱" }}
     </p>
-    {% if page.tags %}
-      <ul class="tag-list">
-        {% for tag in page.tags %}
-          <li>#{{ tag }}</li>
-        {% endfor %}
-      </ul>
-    {% endif %}
+    {% include tag-links.html tags=page.tags %}
   </header>
 
   <div class="post-content prose">

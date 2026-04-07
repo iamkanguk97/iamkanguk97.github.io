@@ -1,0 +1,12 @@
+{% assign tags = include.tags %}
+{% assign tag_limit = include.limit | default: tags.size %}
+{% if tags and tags.size > 0 %}
+  <ul class="tag-list{% if include.compact %} compact{% endif %}">
+    {% for tag in tags limit: tag_limit %}
+      <li>
+        <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+

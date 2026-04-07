@@ -5,7 +5,9 @@ GitHub Pages와 Jekyll로 만든 개인 개발 블로그입니다. 기본 Jekyll
 ## 특징
 
 - GitHub Pages 호환 Jekyll 설정
+- 프로필 카드와 교체 가능한 아바타 지원
 - 반응형 홈 화면과 포스트 템플릿
+- 태그별 글 탐색 페이지
 - 깔끔한 아카이브, 소개 페이지, 404 페이지
 - 새 글과 초안을 빠르게 만드는 `bin/new-post` 작성 스크립트
 - GitHub Actions 기반 Pages 배포 워크플로
@@ -49,5 +51,6 @@ bundle exec jekyll serve
 ├── assets/css/style.scss
 ├── about.md
 ├── archive.html
+├── tags.html
 └── .github/workflows/pages.yml
 ```

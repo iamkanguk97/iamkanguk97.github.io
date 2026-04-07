@@ -10,6 +10,7 @@ description: 작성한 글을 한눈에 정리한 아카이브
       <div>
         <p class="archive-date">{{ post.date | date: "%Y.%m.%d" }}</p>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        {% include tag-links.html tags=post.tags limit=3 compact=true %}
       </div>
       <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
     </article>
