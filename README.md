@@ -1,4 +1,4 @@
-# Kanguk Log
+# 욱이로그
 
 GitHub Pages와 Jekyll로 만든 개인 개발 블로그입니다. 기본 Jekyll 테마 대신, 읽기 경험과 첫인상을 강화한 커스텀 레이아웃과 스타일을 직접 구성했습니다.
 
@@ -37,4 +37,3 @@ bundle exec jekyll serve
 ├── archive.html
 └── .github/workflows/pages.yml
 ```
-

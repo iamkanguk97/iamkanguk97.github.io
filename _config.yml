@@ -1,4 +1,4 @@
-title: Kanguk Log
+title: 욱이로그
 email: iamkanguk97@kakao.com
 description: >-
   코드, 디자인, 제품 감각을 함께 다루는 개발 블로그.
@@ -32,4 +32,3 @@ feed:
   posts_limit: 20
 exclude:
   - README.md
-
