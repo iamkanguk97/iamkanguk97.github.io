@@ -1,0 +1,116 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+usage() {
+  cat <<'EOF'
+Usage:
+  ./bin/new-post "Post Title" optional-slug
+  ./bin/new-post --draft "Draft Title" optional-slug
+  ./bin/new-post --dry-run "Post Title" optional-slug
+
+Examples:
+  ./bin/new-post "GitHub Pages Blog Setup" github-pages-blog
+  ./bin/new-post --draft "Jekyll Notes" jekyll-notes
+EOF
+}
+
+draft_mode=false
+dry_run=false
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --draft)
+      draft_mode=true
+      shift
+      ;;
+    --dry-run)
+      dry_run=true
+      shift
+      ;;
+    --help|-h)
+      usage
+      exit 0
+      ;;
+    *)
+      break
+      ;;
+  esac
+done
+
+if [[ $# -lt 1 ]]; then
+  usage
+  exit 1
+fi
+
+title="$1"
+shift || true
+slug="${1:-}"
+
+if [[ -z "$slug" ]]; then
+  slug="$(printf '%s' "$title" \
+    | tr '[:upper:]' '[:lower:]' \
+    | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')"
+fi
+
+if [[ -z "$slug" ]]; then
+  echo "Error: slug is required when the title cannot be converted safely."
+  echo "Example: ./bin/new-post \"$title\" custom-slug"
+  exit 1
+fi
+
+root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+timestamp="$(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M:%S %z')"
+post_date="$(TZ=Asia/Seoul date '+%Y-%m-%d')"
+
+if [[ "$draft_mode" == true ]]; then
+  target_dir="$root_dir/_drafts"
+  target_file="$target_dir/$slug.md"
+else
+  target_dir="$root_dir/_posts"
+  target_file="$target_dir/$post_date-$slug.md"
+fi
+
+mkdir -p "$target_dir"
+
+if [[ -e "$target_file" ]]; then
+  echo "Error: file already exists: $target_file"
+  exit 1
+fi
+
+content=$(cat <<EOF
+---
+layout: post
+title: "$title"
+date: $timestamp
+categories: [notes]
+tags: []
+excerpt: ""
+---
+
+Write your post here.
+
+## Problem
+
+- What are you trying to solve?
+
+## Approach
+
+- Why did you choose this approach?
+
+## Result
+
+- What changed after the implementation?
+EOF
+)
+
+if [[ "$dry_run" == true ]]; then
+  echo "Target: $target_file"
+  echo
+  printf '%s\n' "$content"
+  exit 0
+fi
+
+printf '%s\n' "$content" > "$target_file"
+echo "Created: $target_file"
+
