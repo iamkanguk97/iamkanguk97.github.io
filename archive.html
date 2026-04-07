@@ -1,0 +1,18 @@
+---
+title: Archive
+permalink: /archive/
+description: 작성한 글을 한눈에 정리한 아카이브
+---
+
+<div class="archive-list">
+  {% for post in site.posts %}
+    <article class="archive-item">
+      <div>
+        <p class="archive-date">{{ post.date | date: "%Y.%m.%d" }}</p>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      </div>
+      <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+    </article>
+  {% endfor %}
+</div>
+

@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+{% assign featured_post = site.posts.first %}
+{% assign posts_count = site.posts | size %}
+{% assign category_count = site.categories | size %}
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">GitHub Pages + Jekyll</p>
+    <h1>코드와 감각을 함께 남기는 개발 블로그</h1>
+    <p class="hero-description">
+      빠르게 읽히고 오래 남는 글을 목표로, 구현 과정과 디자인 판단까지 함께 기록합니다.
+    </p>
+    <div class="hero-actions">
+      <a class="button primary" href="{{ featured_post.url | relative_url }}">최근 글 읽기</a>
+      <a class="button secondary" href="{{ '/archive/' | relative_url }}">전체 글 보기</a>
+    </div>
+  </div>
+  <aside class="hero-panel">
+    <p class="panel-label">Current Focus</p>
+    <h2>{{ site.title }}</h2>
+    <p>{{ site.description }}</p>
+    <div class="stat-grid">
+      <article>
+        <strong>{{ posts_count }}</strong>
+        <span>Published Notes</span>
+      </article>
+      <article>
+        <strong>{{ category_count }}</strong>
+        <span>Focused Topics</span>
+      </article>
+      <article>
+        <strong>{{ site.time | date: "%Y" }}</strong>
+        <span>Current Season</span>
+      </article>
+    </div>
+    <div class="topic-row">
+      {% for category in site.categories limit: 4 %}
+        <span>{{ category | first }}</span>
+      {% endfor %}
+    </div>
+  </aside>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Latest Writing</p>
+      <h2>최근 발행한 글</h2>
+    </div>
+    <a class="text-link" href="{{ '/archive/' | relative_url }}">아카이브로 이동</a>
+  </div>
+  <div class="post-grid">
+    {% for post in site.posts limit: 4 %}
+      {% include post-card.html post=post featured=forloop.first %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section-split">
+  <div class="focus-panel">
+    <p class="eyebrow">Editorial Direction</p>
+    <h2>기술 문서를 넘어 읽고 싶은 블로그로</h2>
+    <p>
+      단순한 튜토리얼보다 맥락이 남는 글, 코드 조각보다 판단 근거가 보이는 글을 쌓는 구조로 설계했습니다.
+    </p>
+  </div>
+  <div class="feature-grid">
+    <article>
+      <h3>Engineering Notes</h3>
+      <p>구현 중 마주친 선택지와 트레이드오프를 정리합니다.</p>
+    </article>
+    <article>
+      <h3>Design Sense</h3>
+      <p>읽기 경험을 해치지 않도록 정보 밀도와 리듬을 다듬습니다.</p>
+    </article>
+    <article>
+      <h3>Product Thinking</h3>
+      <p>기능 설명보다 사용자 관점에서 왜 필요한지를 먼저 다룹니다.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section callout">
+  <p class="eyebrow">Start Here</p>
+  <h2>처음 방문했다면 최근 글 2개부터 읽어보세요.</h2>
+  <p>블로그의 분위기와 관심사를 가장 빠르게 파악할 수 있습니다.</p>
+  <div class="callout-links">
+    {% for post in site.posts limit: 2 %}
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% endfor %}
+  </div>
+</section>

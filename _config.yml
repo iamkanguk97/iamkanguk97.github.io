@@ -1,0 +1,35 @@
+title: Kanguk Log
+email: iamkanguk97@kakao.com
+description: >-
+  코드, 디자인, 제품 감각을 함께 다루는 개발 블로그.
+baseurl: ""
+url: "https://iamkanguk97.github.io"
+lang: ko-KR
+timezone: Asia/Seoul
+permalink: /:categories/:title/
+markdown: kramdown
+highlighter: rouge
+show_excerpts: true
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+sass:
+  style: compressed
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: 강욱
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+feed:
+  posts_limit: 20
+exclude:
+  - README.md
+
