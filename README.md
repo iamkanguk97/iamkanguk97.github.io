@@ -49,6 +49,5 @@ bundle exec jekyll serve
 ├── assets/css/style.scss
 ├── about.md
 ├── archive.html
-├── write.md
 └── .github/workflows/pages.yml
 ```
