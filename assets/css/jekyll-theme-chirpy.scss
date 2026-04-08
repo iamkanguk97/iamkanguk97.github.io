@@ -23,62 +23,6 @@
   margin-top: 0.2rem;
 }
 
-#sidebar .sidebar-visitor-counter {
-  width: calc(100% - 3rem);
-  margin: 0 1.5rem 1.35rem;
-  padding: 0.95rem 1rem 1rem;
-  border: 1px solid var(--sidebar-border-color);
-  border-radius: 1rem;
-  background: color-mix(in srgb, var(--sidebar-hover-bg) 72%, transparent);
-  transform: translateY(-60px);
-}
-
-#sidebar .visitor-counter-title {
-  margin: 0 0 0.8rem;
-  color: var(--sidebar-active-color);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-}
-
-#sidebar .visitor-counter-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.6rem;
-}
-
-#sidebar .visitor-counter-item {
-  min-width: 0;
-}
-
-#sidebar .visitor-counter-label {
-  display: block;
-  margin-bottom: 0.25rem;
-  color: var(--sidebar-muted-color);
-  font-size: 0.72rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-#sidebar .visitor-counter-value {
-  display: block;
-  color: var(--sidebar-active-color);
-  font-size: 0.98rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-#sidebar .sidebar-visitor-counter.is-error .visitor-counter-value {
-  opacity: 0.5;
-}
-
-@media (min-width: 1400px) {
-  #sidebar .sidebar-visitor-counter {
-    margin-left: 2.75rem;
-    margin-right: 1.5rem;
-  }
-}
-
 .home-post-count {
   margin-top: 1.25rem;
   margin-bottom: -0.25rem;

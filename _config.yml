@@ -28,12 +28,6 @@ social:
 profile:
   role: Backend Engineer
 
-visitor_counter:
-  enabled: true
-  provider: countapi
-  namespace: iamkanguk97-github-io
-  timezone: Asia/Seoul
-
 webmaster_verifications:
   google:
   bing:
