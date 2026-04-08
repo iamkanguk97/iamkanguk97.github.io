@@ -86,5 +86,8 @@ layout: compress
 
     {% include_cached search-loader.html lang=lang %}
     <script src="{{ '/assets/js/scroll-controls.js' | relative_url }}"></script>
+    {% unless site.pwa.enabled %}
+      <script src="{{ '/assets/js/pwa-reset.js' | relative_url }}"></script>
+    {% endunless %}
   </body>
 </html>
