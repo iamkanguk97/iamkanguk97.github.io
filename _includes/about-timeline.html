@@ -1,0 +1,56 @@
+<!-- Year-by-year timeline. Year meta (theme/story/keywords) comes from _data/about.yml;
+     the post list under each year is generated from site.posts. -->
+{% assign tl = site.data.about.timeline %}
+{% assign posts_by_year = site.posts | group_by_exp: 'post', "post.date | date: '%Y'" %}
+
+<section class="about-timeline">
+  <h2 id="timeline">{{ tl.title | default: 'Timeline' }}</h2>
+
+  <div class="about-timeline__track">
+    {% for group in posts_by_year %}
+      {% assign year = group.name %}
+      {% assign meta = tl.years | where: 'year', year | first %}
+
+      <article class="about-timeline__year">
+        <header class="about-timeline__head">
+          <span class="about-timeline__dot" aria-hidden="true"></span>
+          <span class="about-timeline__num">{{ year }}</span>
+          {% if meta.theme %}
+            <span class="about-timeline__theme">{{ meta.theme }}</span>
+          {% endif %}
+        </header>
+
+        {% if meta.story %}
+          <p class="about-timeline__story">{{ meta.story }}</p>
+        {% endif %}
+
+        {% if meta.keywords and meta.keywords.size > 0 %}
+          <ul class="about-timeline__keywords list-unstyled">
+            {% for kw in meta.keywords %}
+              <li>{{ kw }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <ul class="about-timeline__posts list-unstyled">
+          {% for post in group.items %}
+            <li class="about-timeline__post">
+              <span class="about-timeline__month text-muted">{{ post.date | date: '%-m월' }}</span>
+              <span class="about-timeline__post-body">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                {%- comment -%}
+                  description is the documented key; older posts only have excerpt (front matter or
+                  the auto-generated first paragraph), so fall back to it and bound its length.
+                {%- endcomment -%}
+                {% assign summary = post.description | default: post.excerpt | strip_html | strip | truncate: 120 %}
+                {% if summary != '' %}
+                  <span class="about-timeline__summary text-muted">{{ summary }}</span>
+                {% endif %}
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </article>
+    {% endfor %}
+  </div>
+</section>
