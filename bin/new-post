@@ -84,13 +84,15 @@ title: "$title"
 date: $timestamp
 categories: [notes]
 tags: []
-description: ""
+# description: "한 줄 요약 (비우면 본문 첫 문단이 카드와 meta description에 쓰임)"
 # image:
 #   path: /assets/images/posts/$slug.png
 #   alt: ""
 # series: example-series
 # series_order: 1
 ---
+
+이 글을 한 줄로 소개하는 문단. (description을 비워두면 이 첫 문단이 카드 요약과 meta description에 쓰입니다.)
 
 ## TL;DR
 
