@@ -7,7 +7,7 @@
   var MIN_FONT = 14;
   var MAX_FONT = 52;
   var PADDING = 6;
-  var PALETTE = ['#4f8cff', '#ff6b6b', '#2ec4b6', '#ffb347', '#a78bfa', '#f472b6', '#34d399', '#f59e0b'];
+  var PALETTE = ['#2563eb', '#dc2626', '#0d9488', '#d97706', '#7c3aed', '#db2777', '#059669', '#b45309']; // every colour ≥ 3:1 on both #fff and #1b1b1e
 
   function render() {
     var container = document.getElementById('category-cloud');
