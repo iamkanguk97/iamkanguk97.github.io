@@ -37,19 +37,17 @@ bundle exec jekyll serve --drafts
 ├── _plugins
 ├── _posts
 ├── _tabs
-├── assets/images/profile-avatar.svg
+├── assets/images/avatar.png
 ├── bin/new-post
 └── .github/workflows/pages-deploy.yml
 ```
 
 ## 프로필 사진 변경
 
-현재 사이드바 아바타는 `assets/images/profile-avatar.svg`를 사용합니다.
+사이드바 아바타는 `assets/images/avatar.png`입니다. 지금 들어 있는 것은 자리만 잡아둔 기본 이미지입니다.
 
-실제 사진으로 바꾸려면:
-
-1. 원하는 이미지를 저장소에 넣습니다.
-2. `_config.yml`의 `avatar` 값을 그 경로로 바꿉니다.
+실제 사진으로 바꾸려면 정사각형(권장 448×448 이상) PNG를 같은 이름으로 덮어쓰기만 하면 됩니다.
+JPG를 쓰고 싶으면 파일을 `assets/images/avatar.jpg`로 넣고 `_config.yml`의 `avatar` 값을 그 경로로 바꿉니다.
 
 ## 배포
 
