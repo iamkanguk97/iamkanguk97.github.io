@@ -28,7 +28,9 @@
     height: 12px;
     border-radius: 50%;
     background: var(--timeline-year-dot-color);
-    border: 2px solid var(--main-bg);
+    /* same ring as the theme's archives dot: --main-bg would vanish on the white light-mode page */
+    border: 2px solid var(--timeline-node-bg);
+    box-shadow: 0 0 2px 0 #c2c6cc;
   }
 
   &__num {
