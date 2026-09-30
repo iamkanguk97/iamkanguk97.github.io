@@ -27,6 +27,16 @@ bundle exec jekyll serve --drafts
 - 일반 글: `_posts/YYYY-MM-DD-slug.md`
 - 초안: `_drafts/slug.md`
 
+## About 페이지
+
+`_tabs/about.md`는 `_data/about.yml`을 읽어 그립니다.
+
+- `intro`: 첫 소개 문단
+- `timeline.years[]`: 연도별 `theme`(한 단어 주제), `story`(문단), `keywords`(칩)
+
+연도별 글 목록은 `_posts`에서 자동으로 만들어지므로 글을 쓸 때마다 이 파일을 고칠 필요는 없습니다.
+`years`에 없는 연도는 글 목록만 표시됩니다.
+
 ## Chirpy 전환 후 핵심 구조
 
 ```text
