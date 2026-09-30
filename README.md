@@ -33,6 +33,25 @@ bundle exec jekyll serve --drafts
 - `image.path` / `image.alt`: 글 상단과 카드 오른쪽에 나오는 썸네일. 주석을 풀고 경로를 채웁니다.
 - `series` / `series_order`: 같은 시리즈 글을 묶습니다. 자세한 내용은 아래 "시리즈" 절.
 
+## 시리즈
+
+연재 글은 `_data/series.yml`에 시리즈를 등록하고, 각 글 front matter에 `series`와 `series_order`를 적습니다.
+
+```yaml
+# _data/series.yml
+nestjs-ecommerce:
+  name: "NestJS로 이커머스 만들기"
+  description: "설계부터 배포까지"
+```
+
+```yaml
+# 글 front matter
+series: nestjs-ecommerce
+series_order: 3
+```
+
+같은 시리즈 글이 2개 이상일 때만 글 오른쪽에 시리즈 목록이 나타납니다.
+
 ## Chirpy 전환 후 핵심 구조
 
 ```text

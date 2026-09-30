@@ -1,0 +1,9 @@
+# 글 시리즈 메타데이터.
+# 글 front matter에 `series: <id>`와 `series_order: <숫자>`를 적으면
+# 같은 id의 글이 2개 이상일 때 글 오른쪽에 시리즈 패널이 표시됩니다.
+#
+# 형식:
+# example-series:
+#   name: "시리즈 표시 이름"
+#   description: "한 줄 설명 (선택)"
+{}
