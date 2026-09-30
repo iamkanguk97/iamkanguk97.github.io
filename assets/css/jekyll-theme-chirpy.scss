@@ -10,6 +10,8 @@
 
 /* append your custom style below */
 
+@use 'custom/series';
+
 #sidebar .site-role {
   margin-top: 0.35rem;
   color: var(--sidebar-muted-color);
