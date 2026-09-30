@@ -27,6 +27,12 @@ bundle exec jekyll serve --drafts
 - 일반 글: `_posts/YYYY-MM-DD-slug.md`
 - 초안: `_drafts/slug.md`
 
+### front matter 키
+
+- `description`: 카드와 검색 결과에 보이는 한 줄 요약. 비워두면 본문 첫 문단이 쓰입니다.
+- `image.path` / `image.alt`: 글 상단과 카드 오른쪽에 나오는 썸네일. 주석을 풀고 경로를 채웁니다.
+- `series` / `series_order`: 같은 시리즈 글을 묶습니다. 자세한 내용은 아래 "시리즈" 절.
+
 ## Chirpy 전환 후 핵심 구조
 
 ```text

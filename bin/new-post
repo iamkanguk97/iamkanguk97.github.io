@@ -80,27 +80,35 @@ fi
 
 content=$(cat <<EOF
 ---
-layout: post
 title: "$title"
 date: $timestamp
 categories: [notes]
 tags: []
-excerpt: ""
+description: ""
+# image:
+#   path: /assets/images/posts/$slug.png
+#   alt: ""
+# series: example-series
+# series_order: 1
 ---
 
-Write your post here.
+## TL;DR
 
-## Problem
+1.
+2.
+3.
 
-- What are you trying to solve?
+## 문제
 
-## Approach
+- 무엇을 해결하려 했나?
 
-- Why did you choose this approach?
+## 접근
 
-## Result
+- 왜 이 방법을 골랐나?
 
-- What changed after the implementation?
+## 결과
+
+- 적용 후 무엇이 달라졌나?
 EOF
 )
 
