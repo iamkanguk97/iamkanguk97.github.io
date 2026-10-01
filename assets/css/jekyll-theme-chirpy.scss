@@ -14,15 +14,6 @@
 @use 'custom/about-timeline';
 @use 'custom/categories-dashboard';
 
-#sidebar .site-role {
-  margin-top: 0.35rem;
-  color: var(--sidebar-muted-color);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
 #sidebar .site-subtitle {
   margin-top: 0.2rem;
 }

@@ -1,9 +1,7 @@
 ---
 title: About
-icon: fas fa-info-circle
-order: 4
+icon: fas fa-user
+order: 1
 ---
 
-{{ site.data.about.intro }}
-
-{% include about-timeline.html %}
+TBD
