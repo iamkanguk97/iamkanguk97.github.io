@@ -1,6 +1,6 @@
 ---
 title: Tags
 layout: tags
-icon: fas fa-tags
-order: 2
+icon: fas fa-hashtag
+order: 4
 ---

@@ -11,11 +11,8 @@
       {%- endif -%}
     </a>
 
-    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    {%- if site.profile.role -%}
-      <p class="site-role mb-0">{{ site.profile.role }}</p>
-    {%- endif -%}
-    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.profile.name }}</a>
+    <p class="site-subtitle fst-italic mb-0">{{ site.profile.tagline }}</p>
   </header>
   <!-- .profile-wrapper -->
 
@@ -24,7 +21,7 @@
       <!-- home -->
       <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
         <a href="{{ '/' | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-home"></i>
+          <i class="fa-fw fas fa-house"></i>
           <span>HOME</span>
         </a>
       </li>
