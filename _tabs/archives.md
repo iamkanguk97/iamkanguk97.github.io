@@ -2,5 +2,5 @@
 title: Archives
 layout: archives
 icon: fas fa-box-archive
-order: 2
+order: 3
 ---
