@@ -158,6 +158,7 @@ exclude:
   - docs
   - tools
   - README.md
+  - README.ko.md
   - LICENSE
   - purgecss.js
   - "*.config.js"
