@@ -35,7 +35,7 @@
         <ul class="about-timeline__posts list-unstyled">
           {% for post in group.items %}
             <li class="about-timeline__post">
-              <span class="about-timeline__month text-muted">{{ post.date | date: '%-m월' }}</span>
+              <span class="about-timeline__month text-muted">{{ post.date | date: '%b' }}</span>
               <span class="about-timeline__post-body">
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
                 {%- comment -%}
