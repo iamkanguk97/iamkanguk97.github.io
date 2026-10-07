@@ -1,7 +1,7 @@
 ---
 title: "DNS_PROBE_FINISHED_NXDOMAIN, 회사에서 왜 나만 접속이 안 되는 거야?"
 date: 2026-10-07 00:22:56 +0900
-categories: [notes]
+categories: [Network, Troubleshooting]
 tags: [network, troubleshooting]
 description: "같은 사내망에서 특정 인원만 DNS_PROBE_FINISHED_NXDOMAIN이 뜬 이유와, DNS 서버 순서가 중요한 이유를 정리했습니다. 네트워크 공부 더 열심히하자.."
 # image:
