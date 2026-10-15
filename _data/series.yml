@@ -6,4 +6,5 @@
 # example-series:
 #   name: "시리즈 표시 이름"
 #   description: "한 줄 설명 (선택)"
-{}
+dns-root:
+  name: "DNS의 뿌리를 찾아서"
