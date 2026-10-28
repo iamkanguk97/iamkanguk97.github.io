@@ -113,4 +113,19 @@
   {% endif %}
 
   {% include metadata-hook.html %}
+
+  <!-- Restore the desktop sidebar state before first paint to avoid a flash -->
+  <script>
+    (() => {
+      const root = document.documentElement;
+      root.classList.add('sidebar-no-transition');
+      try {
+        if (localStorage.getItem('sidebar-collapsed') === 'true') {
+          root.classList.add('sidebar-collapsed');
+        }
+      } catch (error) {
+        console.warn('Failed to read sidebar state:', error);
+      }
+    })();
+  </script>
 </head>

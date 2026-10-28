@@ -19,6 +19,10 @@ layout: compress
   <body>
     {% include sidebar.html lang=lang %}
 
+    <button type="button" id="sidebar-toggle" aria-controls="sidebar" aria-expanded="true" aria-label="사이드바 접기">
+      <i class="fas fa-bars fa-fw"></i>
+    </button>
+
     <div id="main-wrapper" class="d-flex justify-content-center">
       <div class="container d-flex flex-column px-xxl-5">
         {% include topbar.html lang=lang %}
@@ -86,6 +90,7 @@ layout: compress
 
     {% include_cached search-loader.html lang=lang %}
     <script src="{{ '/assets/js/scroll-controls.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/sidebar-toggle.js' | relative_url }}"></script>
     {% unless site.pwa.enabled %}
       <script src="{{ '/assets/js/pwa-reset.js' | relative_url }}"></script>
     {% endunless %}

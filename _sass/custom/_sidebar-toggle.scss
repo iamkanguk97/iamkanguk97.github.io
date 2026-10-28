@@ -1,0 +1,85 @@
+/* Desktop sidebar collapse toggle (mobile keeps the theme's own ☰ behavior) */
+$desktop-min-width: 850px; /* Chirpy's lg breakpoint */
+$wide-min-width: 1200px; /* Chirpy's xl breakpoint: the right panel appears from here */
+$large-min-width: 1650px; /* Chirpy's xxxl breakpoint */
+$sidebar-width: 260px;
+$sidebar-width-large: 300px;
+$toggle-size: 2.25rem;
+$toggle-gap: 0.75rem;
+$slide-transition: 0.4s ease;
+
+@mixin collapsed-layout {
+  #sidebar {
+    transform: translateX(-100%);
+  }
+
+  #main-wrapper {
+    margin-left: 0;
+  }
+
+  #sidebar-toggle {
+    left: $toggle-gap;
+  }
+}
+
+#sidebar-toggle {
+  display: none;
+}
+
+@media all and (min-width: $desktop-min-width) {
+  #sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: $toggle-gap;
+    left: calc(#{$sidebar-width} - #{$toggle-size} - #{$toggle-gap});
+    z-index: 1040;
+    width: $toggle-size;
+    height: $toggle-size;
+    padding: 0;
+    border: 1px solid var(--sidebar-border-color);
+    border-radius: 50%;
+    background: var(--sidebar-btn-bg);
+    color: var(--sidebar-btn-color);
+    transition: left $slide-transition, color 0.2s ease;
+
+    &:hover {
+      color: var(--sidebar-active-color);
+    }
+  }
+
+  #sidebar,
+  #main-wrapper {
+    transition: transform $slide-transition, margin-left $slide-transition;
+  }
+
+  /* Skip the slide animation while restoring the saved state on page load */
+  html.sidebar-no-transition {
+    #sidebar,
+    #main-wrapper,
+    #sidebar-toggle {
+      transition: none;
+    }
+  }
+}
+
+/* Mid width: collapsed by default, opened only for the current page */
+@media all and (min-width: $desktop-min-width) and (max-width: $wide-min-width - 0.02px) {
+  html:not(.sidebar-mid-open) {
+    @include collapsed-layout;
+  }
+}
+
+/* Wide: follows the saved preference */
+@media all and (min-width: $wide-min-width) {
+  html.sidebar-collapsed {
+    @include collapsed-layout;
+  }
+}
+
+@media all and (min-width: $large-min-width) {
+  #sidebar-toggle {
+    left: calc(#{$sidebar-width-large} - #{$toggle-size} - #{$toggle-gap});
+  }
+}
