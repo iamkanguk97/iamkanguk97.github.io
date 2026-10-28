@@ -13,6 +13,8 @@ bundle exec jekyll serve            # include drafts: --drafts
 
 ## Write a post
 
+> Try to write blog posts by hand.
+
 ```bash
 ./bin/new-post "Post title" optional-slug
 ./bin/new-post --draft "Draft title" optional-slug

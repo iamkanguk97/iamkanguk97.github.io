@@ -13,6 +13,8 @@ bundle exec jekyll serve            # 초안 포함: --drafts
 
 ## 글 작성
 
+> 블로그 글은 직접 손으로 쓰도록 노력하자.
+
 ```bash
 ./bin/new-post "글 제목" optional-slug
 ./bin/new-post --draft "초안 제목" optional-slug
