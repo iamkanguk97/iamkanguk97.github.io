@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" font-family="Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+  </marker>
+</defs>
+<rect width="1920" height="1080" fill="#ffffff"/>
+<text x="96" y="132" font-size="60" font-weight="800" fill="#1e293b">Tower of Hanoi: n = 3</text>
+<text x="96" y="192" font-size="32" font-weight="500" fill="#64748b">The same three steps as n = 2, with the top 2 disks moved as one group.</text>
+<rect x="96" y="240" width="840" height="380" rx="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+<text x="132" y="302" font-size="30" font-weight="700" fill="#1e293b">Start</text>
+<rect x="136" y="540" width="760" height="10" rx="5" fill="#94a3b8"/>
+<rect x="231" y="380" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="236" y="588" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 1</text>
+<rect x="511" y="380" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="516" y="588" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 2</text>
+<rect x="791" y="380" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="796" y="588" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 3</text>
+<rect x="121.0" y="502" width="230" height="36" rx="10" fill="#059669"/><text x="236" y="529" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">3</text>
+<rect x="146.0" y="462" width="180" height="36" rx="10" fill="#d97706"/><text x="236" y="489" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">2</text>
+<rect x="171.0" y="422" width="130" height="36" rx="10" fill="#2563eb"/><text x="236" y="449" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">1</text>
+<rect x="984" y="240" width="840" height="380" rx="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+<circle cx="1040" cy="292" r="20" fill="#2563eb"/><text x="1040" y="301" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">1</text>
+<text x="1076" y="302" font-size="30" font-weight="700" fill="#1e293b">Top 2 disks: Peg 1 → Peg 2<tspan font-weight="500" fill="#64748b" font-size="26">  (move 2 disks)</tspan></text>
+<rect x="1024" y="540" width="760" height="10" rx="5" fill="#94a3b8"/>
+<rect x="1119" y="380" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="1124" y="588" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 1</text>
+<rect x="1399" y="380" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="1404" y="588" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 2</text>
+<rect x="1679" y="380" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="1684" y="588" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 3</text>
+<rect x="1034.0" y="462" width="180" height="36" rx="10" fill="none" stroke="#d97706" stroke-width="3" stroke-dasharray="8 6" opacity="0.55"/>
+<rect x="1059.0" y="422" width="130" height="36" rx="10" fill="none" stroke="#2563eb" stroke-width="3" stroke-dasharray="8 6" opacity="0.55"/>
+<rect x="1009.0" y="502" width="230" height="36" rx="10" fill="#059669"/><text x="1124" y="529" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">3</text>
+<rect x="1314.0" y="502" width="180" height="36" rx="10" fill="#d97706"/><text x="1404" y="529" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">2</text>
+<rect x="1339.0" y="462" width="130" height="36" rx="10" fill="#2563eb"/><text x="1404" y="489" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">1</text>
+<rect x="1300.0" y="452" width="208" height="88" rx="14" fill="none" stroke="#1e293b" stroke-width="2.5" stroke-dasharray="6 6" opacity="0.6"/>
+<path d="M 1124 406 Q 1264.0 310 1404 442" fill="none" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="96" y="660" width="840" height="380" rx="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+<circle cx="152" cy="712" r="20" fill="#2563eb"/><text x="152" y="721" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">2</text>
+<text x="188" y="722" font-size="30" font-weight="700" fill="#1e293b">Disk 3: Peg 1 → Peg 3</text>
+<rect x="136" y="960" width="760" height="10" rx="5" fill="#94a3b8"/>
+<rect x="231" y="800" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="236" y="1008" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 1</text>
+<rect x="511" y="800" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="516" y="1008" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 2</text>
+<rect x="791" y="800" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="796" y="1008" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 3</text>
+<rect x="121.0" y="922" width="230" height="36" rx="10" fill="none" stroke="#059669" stroke-width="3" stroke-dasharray="8 6" opacity="0.55"/>
+<rect x="426.0" y="922" width="180" height="36" rx="10" fill="#d97706"/><text x="516" y="949" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">2</text>
+<rect x="451.0" y="882" width="130" height="36" rx="10" fill="#2563eb"/><text x="516" y="909" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">1</text>
+<rect x="681.0" y="922" width="230" height="36" rx="10" fill="#059669"/><text x="796" y="949" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">3</text>
+<path d="M 236 906 Q 516.0 730 796 902" fill="none" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="984" y="660" width="840" height="380" rx="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+<circle cx="1040" cy="712" r="20" fill="#2563eb"/><text x="1040" y="721" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">3</text>
+<text x="1076" y="722" font-size="30" font-weight="700" fill="#1e293b">2 disks: Peg 2 → Peg 3<tspan font-weight="500" fill="#64748b" font-size="26">  (move 2 disks)</tspan></text>
+<rect x="1024" y="960" width="760" height="10" rx="5" fill="#94a3b8"/>
+<rect x="1119" y="800" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="1124" y="1008" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 1</text>
+<rect x="1399" y="800" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="1404" y="1008" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 2</text>
+<rect x="1679" y="800" width="10" height="160" rx="5" fill="#cbd5e1"/>
+<text x="1684" y="1008" text-anchor="middle" font-size="24" font-weight="600" fill="#64748b">Peg 3</text>
+<rect x="1314.0" y="922" width="180" height="36" rx="10" fill="none" stroke="#d97706" stroke-width="3" stroke-dasharray="8 6" opacity="0.55"/>
+<rect x="1339.0" y="882" width="130" height="36" rx="10" fill="none" stroke="#2563eb" stroke-width="3" stroke-dasharray="8 6" opacity="0.55"/>
+<rect x="1569.0" y="922" width="230" height="36" rx="10" fill="#059669"/><text x="1684" y="949" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">3</text>
+<rect x="1594.0" y="882" width="180" height="36" rx="10" fill="#d97706"/><text x="1684" y="909" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">2</text>
+<rect x="1619.0" y="842" width="130" height="36" rx="10" fill="#2563eb"/><text x="1684" y="869" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">1</text>
+<rect x="1580.0" y="832" width="208" height="88" rx="14" fill="none" stroke="#1e293b" stroke-width="2.5" stroke-dasharray="6 6" opacity="0.6"/>
+<path d="M 1404 866 Q 1544.0 730 1684 822" fill="none" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)"/>
+</svg>
