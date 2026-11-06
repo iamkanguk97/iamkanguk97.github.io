@@ -168,3 +168,9 @@
     padding-right: 1.45rem;
   }
 }
+
+/* Make post section titles (h2, h3) bold so every post matches, with or without `## **title**` in Markdown. */
+.content h2,
+.content h3 {
+  font-weight: 700;
+}
